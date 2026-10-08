@@ -6,7 +6,7 @@ A minimal Express + TypeScript waitlist service — people join a product waitli
 
 It is realistic but intentionally small, and ships with **no product analytics, experimentation, or session-replay wired in** — the user-action handlers just log to the console today.
 
-## User actions worth tracking
+## Key user actions
 
 **User Joined Waitlist** — `POST /waitlist` · **Waitlist Confirmed** — `POST /waitlist/:id/confirm`
 
