@@ -32,7 +32,7 @@ app.post("/waitlist", (req: Request, res: Response) => {
   };
   save(entry);
 
-  // No product analytics wired in yet — the handler just logs the action.
+  // The handler logs the action.
   console.log(`[waitlist] User Joined Waitlist id=${entry.id} email=${email} position=${entry.position}`);
 
   res.status(201).json({ entry });
@@ -47,7 +47,7 @@ app.post("/waitlist/:id/confirm", (req: Request, res: Response) => {
   entry.status = "confirmed";
   save(entry);
 
-  // No product analytics wired in yet — the handler just logs the action.
+  // The handler logs the action.
   console.log(`[waitlist] Waitlist Confirmed id=${entry.id} email=${entry.email}`);
 
   res.json({ entry });

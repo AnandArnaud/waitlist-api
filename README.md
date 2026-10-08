@@ -4,7 +4,7 @@ A minimal Express + TypeScript waitlist service — people join a product waitli
 
 **Stack:** Express 4 + TypeScript (Node)
 
-It is realistic but intentionally small, and ships with **no product analytics, experimentation, or session-replay wired in** — the user-action handlers just log to the console today.
+It is intentionally small. The user-action handlers log to the console.
 
 ## Key user actions
 
